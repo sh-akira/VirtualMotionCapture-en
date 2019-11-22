@@ -1,0 +1,25 @@
+- name: FAQ
+  link: https://github.com/sh-akira/VirtualMotionCapture/wiki/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F%E3%81%A8%E5%9B%9E%E7%AD%94
+  new_window: true
+  highlight: true
+- name: Guide
+  link: /manual/
+  new_window: false
+  highlight: true
+- name: Download
+  link: /download.html
+  new_window: false
+  highlight: true
+- name: About
+  link: /about.html
+  new_window: false
+  highlight: false
+- name: 日本語
+  link: https://sh-akira.github.io/VirtualMotionCapture/
+  new_window: false
+  highlight: false
+- name: 한국어
+  link: https://sh-akira.github.io/VirtualMotionCapture-ko/
+  new_window: false
+  highlight: false
+
