@@ -1,0 +1,65 @@
+---
+title: Download
+heading: Download
+description: Virtual Motion Capture Download
+pricing_table:
+  - name: BOOTH
+    color: "#4a4a4a"
+    bgcolor: "#5555f0"
+    features:
+      - text: Free Download
+        highlight: true
+      - text: Help support by donating with BOOST
+        highlight: false
+    call_to_action:
+      link: https://sh-akira.booth.pm/items/999760
+      text: Download Page
+  - name: pixivFANBOX
+    color: "#4a4a4a"
+    bgcolor: "#f05555"
+    features:
+      - text: Pre-release Version (Paid)
+        highlight: true
+      - text: Backers receive limited access to new features
+        highlight: false
+    call_to_action:
+      link: https://www.pixiv.net/fanbox/creator/10267568
+      text: Backer Page
+faq:
+  - question: Does it cost anything to use the software?
+    answer: You can use it for free. A donation can be made to help support this software.
+  - question: Is attribution required to use the software？
+    answer: No attribution is required but is greatly appreciated.
+  - question: What if I have questions?
+    answer: Please direct your questions here <a target="_blank" href="https://twitter.com/sh_akira">Twitter</a>
+  - question: Where can I support the software?
+    answer: <a target="_blank" href="https://www.pixiv.net/fanbox/creator/10267568">pixivFANBOX</a>、<a target="_blank" href="https://sh-akira.booth.pm/items/999760">BOOTH</a>、<a target="_blank" href="https://www.amazon.co.jp/registry/wishlist/331R041P8K6BV/ref=cm_sw_r_cp_ep_ws_CxeJBb6XYBE62">Amazon Wish List</a>
+---
+<div class="plans">
+	{% for plan in page.pricing_table %}
+		<ul class="plan">
+			<li style="background: {{ plan.color }}">
+				<h3>{{ plan.name }}</h3>
+			</li>
+			{% for feature in plan.features %}
+				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
+			{% endfor %}
+
+			{% if plan.call_to_action %}
+				<li class="pricing-cta"><div class="button"><a target="_blank" style="background: {{ plan.bgcolor }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
+			{% endif %}
+		</ul>
+	{% endfor %}
+</div>
+
+{% if page.faq %}
+	<h2>FAQ Regarding Usage</h2>
+	<dl class="faq">
+		{% for item in page.faq %}
+			<div>
+				<dt>Q.{{ item.question }}</dt>
+				<dd>A.{{ item.answer }}</dd>
+			</div>
+		{% endfor %}
+	</dl>
+{% endif %}

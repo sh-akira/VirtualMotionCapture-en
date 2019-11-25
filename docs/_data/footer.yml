@@ -1,0 +1,23 @@
+- links:
+  - name: Top Page
+    link: /
+  - name: Download
+    link: /download.html
+- links:
+  - name: Guide
+    link: /manual/
+  - name: About
+    link: /about.html
+- links:
+  - name: GitHub
+    link: https://github.com/sh-akira
+    new_window: true
+    social_icon: GitHub
+  - name: Twitter
+    link: https://twitter.com/sh_akira
+    social_icon: Twitter
+    new_window: true
+  - name: pixivFANBOX
+    link: https://www.pixiv.net/fanbox/creator/10267568
+    social_icon: pixivFANBOX
+    new_window: true
